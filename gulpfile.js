@@ -181,4 +181,4 @@ gulp.task('default',  function (cb) {
         cb)
 });
 
-gulp.task('run', ['copy', 'watch', 'nodemon']);
+gulp.task('run', ['copy', 'build','watch', 'nodemon']);

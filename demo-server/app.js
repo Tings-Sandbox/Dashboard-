@@ -76,7 +76,7 @@ app.get('/auth/logout', function(req, res){
 app.use(express.static(path.join(__dirname, '../')));
 
 app.use('/dist', express.static(path.join(__dirname,'../dist/')));
-
+app.use('/css', express.static(path.join(__dirname, '../app/css/')))
 app.use('/dropbox', serveIndex(__dirname+'/dist'));
 
 var http = require('http').Server(app);
